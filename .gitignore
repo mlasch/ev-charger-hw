@@ -1,0 +1,57 @@
+# KiCad project files to ignore
+
+# Auto-save and backup files
+*.kicad_prl
+*-backups/
+*.bak
+*.bak[0-9]
+*.000
+*~
+
+# KiCad auto-generated files
+fp-info-cache
+*.kicad_dru.bak
+
+# 3D model cache
+_autosave-*
+
+# Output / fabrication files (regenerate from source)
+gerbers/
+fab/
+output/
+*.gbr
+*.drl
+*.gbl
+*.gbo
+*.gbp
+*.gbs
+*.gtl
+*.gto
+*.gtp
+*.gts
+*.gm1
+*.dxf
+*.pdf
+*.svg
+*.pos
+*.rpt
+*.xml
+*.csv
+
+# SPICE simulation output
+*.raw
+*.cir.log
+
+# Footprint library tables (local machine paths)
+# ONLY ignore if you're not sharing custom libraries
+# fp-lib-table
+# sym-lib-table
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Fabrication Toolkit
+fabrication-toolkit-options.json
+production
