@@ -1,0 +1,40 @@
+name: Export KiCad schematic and layout
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  export-pdfs:
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:9.0
+      options: --user root
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Export schematic to PDF
+        run: |
+          mkdir -p output
+          kicad-cli sch export pdf \
+            --output output/schematic.pdf \
+            ev_charger.kicad_sch
+
+      - name: Export PCB layout to PDF
+        run: |
+          mkdir -p output
+          kicad-cli pcb export pdf \
+            --output output/pcb-layout.pdf \
+            --layers F.Cu,B.Cu,F.Silkscreen,B.Silkscreen,F.Courtyard,Edge.Cuts \
+            ev_charger.kicad_pcb
+
+      - name: Upload PDFs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: kicad-exports
+          path: output/*.pdf
+          retention-days: 30
