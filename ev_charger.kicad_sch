@@ -3367,7 +3367,7 @@
 		)
 		(uuid "57aa3acb-01ef-4011-a410-a32e2995e6b6")
 	)
-	(label "+3.3V"
+	(label "3V"
 		(at 234.95 58.42 0)
 		(effects
 			(font
@@ -3397,7 +3397,7 @@
 		)
 		(uuid "8e27d6e0-0ac3-407e-a0b4-f524698f9c1f")
 	)
-	(label "+3.3V"
+	(label "3V"
 		(at 161.29 30.48 0)
 		(effects
 			(font
@@ -4269,7 +4269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V"
 			(at 19.05 55.88 0)
 			(effects
 				(font
@@ -4555,7 +4555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V"
 			(at 146.05 62.23 0)
 			(effects
 				(font
@@ -4967,7 +4967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "3V"
 			(at 234.95 52.07 0)
 			(effects
 				(font
@@ -5121,7 +5121,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "47k"
 			(at 148.59 74.9299 0)
 			(effects
 				(font
@@ -5166,7 +5166,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23206"
+		(property "LCSC" "C25819"
 			(at 146.05 73.66 0)
 			(effects
 				(font
@@ -6945,7 +6945,7 @@
 				)
 			)
 		)
-		(property "Value" "560R"
+		(property "Value" "1k"
 			(at 180.34 64.77 90)
 			(effects
 				(font
@@ -6989,7 +6989,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23204"
+		(property "LCSC" "C21190"
 			(at 180.34 68.58 90)
 			(effects
 				(font
